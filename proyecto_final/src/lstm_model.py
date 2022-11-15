@@ -74,7 +74,7 @@ def evaluate_LSTM_BI(dataloader, model, loss_func):
 #optimizer = torch.optim.Adam(model3_1.parameters(), lr=lr)
 
 
-def train_model_lstm(  vocab_size, embed_dim, rnn_hidden_size, fc_hidden_size, device, num_classes,
+def evaluate_LSTM_BI(  vocab_size, embed_dim, rnn_hidden_size, fc_hidden_size, device, num_classes,
                       loss_func, optimizer, lr, num_epochs, train_dl, valid_dl):
     model = RNN_LSTM_BI(vocab_size= vocab_size,
      embed_dim= embed_dim,
